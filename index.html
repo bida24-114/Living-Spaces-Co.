@@ -78,7 +78,19 @@ SPEEDSTAR MOTORS
       display:block;
       margin: 0 auto
    }
-   
+   .car-container {
+      display: flex;
+      align-items: center;
+      margin bottom: 20 px
+   }
+   .car-image{
+      width: 200 px
+      height: auto;
+      margin-right: 20 px
+   }
+   .car-details{
+      flex-grow: 1;
+   }
 </style>
 </head>
 <body>
@@ -103,76 +115,138 @@ ENGINEERED FOR EXCELLENCE
       <h2>
          Our Pre-Owned Cars
       </h2>
-      <table>
-         <thead>
-            <tr>
-               <th>Model</th>
-               <th>Year</th>
-               <th>Mileage</th>
-               <th>Condition</th>
-               <th>Price</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <td>Honda Civic</td>
-               <td>2020</td>
-               <td>35,000</td>
-               <td>Excellent</td>
-               <td>/$22,000</td>
-            </tr>
-            <tr>
-               <td>Toyota Camry</td>
-               <td>2019</td>
-               <td>60,000</td>
-               <td>Good</td>
-               <td>$18500</td>
-            </tr>
-            <tr>
-               <td>Mercede-Benz C-Class</td>
-               <td>2020</td>
-               <td>45000</td>
-               <td>Very Good</td>
-               <td>$28,000</td>
-            </tr>
-            <tr>
-               <td>Nissan Altima</td>
-               <td>2018</td>
-               <td>70000</td>
-               <td>Good</td>
-               <td>$15000</td>
-            </tr>
-            <tr>
-               <td>Jeep Wrangler</td>
-               <td>2022</td>
-               <td>15000</td>
-               <td>Excellent</td>
-               <td>$35000</td>
-            </tr>
-            <tr>
-               <td>BMW3 series</td>
-               <td>2020</td>
-               <td>40000</td>
-               <td>Very Good</td>
-               <td>$30000</td>
-            </tr>
-            <tr>
-               <td>Audi Q5</td>
-               <td>2021</td>
-               <td>25000</td>
-               <td>Excellent</td>
-               <td>$38000</td>
-            </tr>
-            <tr>
-               <td>Hyundai Elantral</td>
-               <td>2022</td>
-               <td>10000</td>
-               <td>Excellent</td>
-               <td>19000</td>
-            </tr>
-         </tbody>
-      </table>
-   </section>
+
+      <div class="car-container">
+         <img class="car-image" src="images/honda_civic.jpg" alt="Honda Civic">
+         <div class="car-details">
+            <h3>Honda Civic</h3>
+            <ul>
+               <li>Year: 2020</li>
+               <li>Mileage:35,000</li>
+               <li>Condition: Excelllent</li>
+               <li>Price: $22,000</li>
+                  </ul>
+         </div>
+      </div>
+
+      <div class="car-container">
+            <img class="car-image" src="images/toyota_camry.jpg" alt="Toyota Camry"> 
+            <div class="car-details">
+                <h3>Toyota Camry</h3>
+                <ul>
+                    <li>Year: 2019</li>
+                    <li>Mileage: 60,000</li>
+                    <li>Condition: Good</li>
+                    <li>Price: $18,500</li>
+                </ul>
+            </div>
+        </div>
+
+      <div class="car-container">
+            <img class="car-image" src="images/Ford_Mustang.jpg" alt="Ford Mustang"> 
+            <div class="car-details">
+                <h3>Ford Mustang</h3>
+                <ul>
+                    <li>Year: 2017</li>
+                    <li>Mileage: 45,000</li>
+                    <li>Condition: Very Good</li>
+                    <li>Price: $28,000</li>
+                </ul>
+            </div>
+        </div>
+
+      <div class="car-container">
+            <img class="car-image" src="images/Chevrolet_Silvarado.jpg" alt="Chevrolet Silvarado"> 
+            <div class="car-details">
+                <h3>Chevrolet Silvarado</h3>
+                <ul>
+                    <li>Year: 2021</li>
+                    <li>Mileage: 20,000</li>
+                    <li>Condition: Excellent</li>
+                    <li>Price: $40,000</li>
+                </ul>
+            </div>
+        </div>
+
+      <div class="car-container">
+      <img class="car-image" src="images/mercedes_c_class.jpg" alt="Mercedes-Benz C-Class">
+      <div class="car-details">
+        <h3>Mercedes-Benz C-Class</h3>
+        <ul>
+          <li>Year: 2020</li>
+          <li>Mileage: 45,000</li>
+          <li>Condition: Very Good</li>
+          <li>Price: $28,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-container">
+      <img class="car-image" src="images/nissan_altima.jpg" alt="Nissan Altima">
+      <div class="car-details">
+        <h3>Nissan Altima</h3>
+        <ul>
+          <li>Year: 2018</li>
+          <li>Mileage: 70,000</li>
+          <li>Condition: Good</li>
+          <li>Price: $15,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-container">
+      <img class="car-image" src="images/jeep_wrangler.jpg" alt="Jeep Wrangler">
+      <div class="car-details">
+        <h3>Jeep Wrangler</h3>
+        <ul>
+          <li>Year: 2022</li>
+          <li>Mileage: 15,000</li>
+          <li>Condition: Excellent</li>
+          <li>Price: $35,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-container">
+      <img class="car-image" src="images/bmw_3_series.jpg" alt="BMW 3 Series">
+      <div class="car-details">
+        <h3>BMW 3 Series</h3>
+        <ul>
+          <li>Year: 2020</li>
+          <li>Mileage: 40,000</li>
+          <li>Condition: Very Good</li>
+          <li>Price: $30,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-container">
+      <img class="car-image" src="images/audi_q5.jpg" alt="Audi Q5">
+      <div class="car-details">
+        <h3>Audi Q5</h3>
+        <ul>
+          <li>Year: 2021</li>
+          <li>Mileage: 25,000</li>
+          <li>Condition: Excellent</li>
+          <li>Price: $38,000</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="car-container">
+      <img class="car-image" src="images/hyundai_elantra.jpg" alt="Hyundai Elantra">
+      <div class="car-details">
+        <h3>Hyundai Elantra</h3>
+        <ul>
+          <li>Year: 2022</li>
+          <li>Mileage: 10,000</li>
+          <li>Condition: Excellent</li>
+          <li>Price: $19,000</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
 
    <section>
       <h2>Contact Us</h2>
