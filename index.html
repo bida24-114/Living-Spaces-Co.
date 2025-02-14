@@ -3,72 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Spaces</title>
+    <title>Living Spaces Co.</title>
     <style>
-        /* Basic styles */
         body {
             font-family: sans-serif;
             margin: 0;
-            background-color: #fff; /* White background */
-            color: #333; /* Dark gray text */
+            background-color: #f6f1ed;
+            color: #333;
         }
 
-        /* Header styles */
         header {
-            background-color: #fff; /* White header */
+            text-align: center;
             padding: 20px;
-            text-align: center; /* Center the logo */
-            display: flex; /* Enable flexbox for alignment */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
         }
 
         .logo img {
-            max-height: 80px; /* Adjust as needed */
-            max-width: 300px; /* Adjust as needed */ /* Or use width: and a fixed value */
-            width: auto;
+            max-width: 400px;
+            height: auto;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            color: #888;
+            margin-top: 10px;
         }
 
         nav {
-            background-color: #fff; /* White nav */
-            color: #333; /* Dark gray text */
+            background-color: #dd9d4c;
             padding: 10px;
             text-align: center;
         }
 
         nav a {
-            color: #a0522d; /* Sienna brown navigation links */
+            color: white;
             text-decoration: none;
             margin: 0 15px;
+            padding: 5px 10px;
         }
 
-        main {
+        section {
             padding: 20px;
+            text-align: center;
         }
 
-        .hero-image {
-            text-align: center; /* Center the image */
-            margin-bottom: 20px;
-        }
-
-        .hero-image img {
-            max-width: 100%; /* Make image responsive */
+        .section-image {
+            max-width: 100%;
             height: auto;
-        }
-
-        .hero-button {
-            background-color: #a0522d; /* Sienna brown button */
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
+            display: block;
+            margin: 0 auto;
         }
 
         footer {
-            background-color: #fff; /* White footer */
-            color: #333; /* Dark gray text */
-            padding: 10px;
+            background-color: #333;
+            color: white;
             text-align: center;
+            padding: 10px;
+        }
+
+        /* Contact Us Section Styles */
+        #contact-us {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #contact-us h2 {
+            margin-bottom: 10px;
+        }
+
+        #contact-us p {
+            margin-bottom: 5px;
+        }
+
+        #contact-us a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        #contact-us a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -76,28 +89,60 @@
 
     <header>
         <div class="logo">
-            <img src="LivingSpacesLogo.jpg" alt="Living Spaces Logo">
+            <img src="your-logo.png" alt="Living Spaces Co. Logo">
         </div>
+        <div class="tagline">WHERE COMFORT MEETS STYLE</div>
     </header>
 
     <nav>
-        <a href="#">Shop All</a>
-        <a href="#">Sofas & Furniture</a>
-        <a href="#">Lighting</a>
-        <a href="#">Soft Furnishings</a>
-        <a href="#">Home Accessories</a>
-        <a href="#">Sale</a>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Product</a>
+        <a href="#">Customer Reviews</a>
     </nav>
 
-    <main>
-        <div class="hero-image">
-            <img src="placeholder1.jpg" alt="Sofa">
-            <button class="hero-button">Shop Sofas</button>
-        </div>
-    </main>
+    <section>
+        <img class="section-image" src="your-hero-image.jpg" alt="Hero Image">
+        <h2>Thoughtful & Functional</h2>
+    </section>
+
+    <section>
+        <img class="section-image" src="your-product-image1.jpg" alt="Product 1">
+        <h3>Stoneware</h3>
+        <p>Artisanal designs that make every day a feast</p>
+    </section>
+
+    <section>
+        <img class="section-image" src="your-product-image2.jpg" alt="Product 2">
+        <h3>Furniture</h3>
+        <p>Casual yet sophisticated pieces for every room in the house</p>
+    </section>
+
+    <section>
+        <img class="section-image" src="your-product-image3.jpg" alt="Product 3">
+        <h3>Decor</h3>
+        <p>Tasteful elements to mix and match for an elevated look</p>
+    </section>
+
+    <section>
+        <h2>Loved by Homeowners</h2>
+        <img class="section-image" src="customer1.jpg" alt="Customer 1">
+        <p>"Meals with my family are always extra special because of the beautiful plates I got from Custom & Nooke." - Sari Purdue</p>
+
+        <img class="section-image" src="customer2.jpg" alt="Customer 2">
+        <p>"Very pleased with my new sofa--the quality is great, it's comfortable, and elevates the look of my home." - Josh Loy</p>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? We'd love to hear from you!</p>
+        <p>Email: <a href="mailto:info@livingspacesco.com">info@livingspacesco.com</a></p>
+        <p>Phone: <a href="tel:+71275353">+267717275353</a></p>
+        <p>Address: 123 Main Street, Gaborone, Botswana</p>
+    </section>
 
     <footer>
-        <p>&copy; 2023 Living Spaces</p>
+        <p>&copy; 2025 Living Spaces Co.</p>
     </footer>
 
 </body>
