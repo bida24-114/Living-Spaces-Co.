@@ -5,61 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Spaces Co.</title>
     <style>
+        /* ... (Your CSS styles go here) ... */
         body {
             font-family: sans-serif;
             margin: 0;
             background-color: #f6f1ed;
             color: #333;
-            /* Add background image */
-            background-image: url("your-background-image.jpg"); /* Replace with your image file */
-            background-size: cover; /* Cover the entire viewport */
-            background-repeat: no-repeat; /* Prevent image from repeating */
-            /* Optional: Add a semi-transparent overlay if the image is too bright */
-            /* background-color: rgba(246, 241, 237, 0.7);  Adjust the alpha (0.7) for transparency */
+            background-image: url("your-background-image.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
         }
-
-        /* ... (rest of your CSS styles) ... */
-
-        /*  Styles to make content more readable on top of the image */
         header, nav, section, footer {
-            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content areas */
-            padding: 20px; /* Add some padding around content */
-            margin-bottom: 20px; /* Space between sections */
-            border-radius: 5px; /* Optional: Rounded corners */
-            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional: subtle shadow */
-
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
         }
-        /* Style the header so the title is more visible */
         header h1 {
             background-color: rgba(200,200,200,0.5);
             padding: 10px;
             border-radius: 5px;
-
         }
-
-        /* Style the navigation links */
         nav a {
-            color: #333; /* Darker link color for better contrast */
+            color: #333;
             padding: 10px;
             border-radius: 5px;
-            transition: background-color 0.3s ease; /* smooth transition on hover */
+            transition: background-color 0.3s ease;
         }
-
         nav a:hover {
-            background-color: rgba(221, 157, 76, 0.5); /* Semi-transparent nav hover color */
+            background-color: rgba(221, 157, 76, 0.5);
             color: white;
         }
-
-
-        /* Ensure images in sections have some margin */
         .section-image {
             margin-bottom: 20px;
         }
-
-
     </style>
 </head>
 <body>
 
-    </body>
+    <header>
+        <h1>LIVING SPACES CO.</h1>
+        <div class="tagline">WHERE COMFORT MEETS STYLE</div>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Product</a>
+        <a href="#">Customer Reviews</a>
+    </nav>
+
+    <section>
+        <img class="section-image" src="your-product-image1.jpg" alt="Product 1">
+        <h3>Stoneware</h3>
+        <p>Artisanal designs that make every day a feast</p>
+    </section>
+
+    <section>
+        <img class="section-image" src="your-product-image2.jpg" alt="Product 2">
+        <h3>Furniture</h3>
+        <p>Casual yet sophisticated pieces for every room in the house</p>
+    </section>
+
+    <section>
+        <img class="section-image" src="your-product-image3.jpg" alt="Product 3">
+        <h3>Decor</h3>
+        <p>Tasteful elements to mix and match for an elevated look</p>
+    </section>
+
+    <section>
+        <h2>Loved by Homeowners</h2>
+        <img class="section-image" src="customer1.jpg" alt="Customer 1">
+        <p>"Meals with my family are always extra special because of the beautiful plates I got from Custom & Nooke." - Sari Purdue</p>
+
+        <img class="section-image" src="customer2.jpg" alt="Customer 2">
+        <p>"Very pleased with my new sofa--the quality is great, it's comfortable, and elevates the look of my home." - Josh Loy</p>
+    </section>
+
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <p>Have questions or need assistance? We'd love to hear from you!</p>
+        <p>Email: <a href="mailto:info@livingspacesco.com">info@livingspacesco.com</a></p>
+        <p>Phone: <a href="tel:+71275353">+267717275353</a></p>
+        <p>Address: 123 Main Street, Gaborone, Botswana</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Living Spaces Co.</p>
+    </footer>
+
+</body>
 </html>
