@@ -10,111 +10,56 @@
             margin: 0;
             background-color: #f6f1ed;
             color: #333;
+            /* Add background image */
+            background-image: url("your-background-image.jpg"); /* Replace with your image file */
+            background-size: cover; /* Cover the entire viewport */
+            background-repeat: no-repeat; /* Prevent image from repeating */
+            /* Optional: Add a semi-transparent overlay if the image is too bright */
+            /* background-color: rgba(246, 241, 237, 0.7);  Adjust the alpha (0.7) for transparency */
         }
 
-        header {
-            text-align: center;
-            padding: 20px;
-        }
+        /* ... (rest of your CSS styles) ... */
 
-        .logo img {
-            max-width: 400px;
-            height: auto;
-        }
+        /*  Styles to make content more readable on top of the image */
+        header, nav, section, footer {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for content areas */
+            padding: 20px; /* Add some padding around content */
+            margin-bottom: 20px; /* Space between sections */
+            border-radius: 5px; /* Optional: Rounded corners */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Optional: subtle shadow */
 
-        .tagline {
-            font-size: 1.2em;
-            color: #888;
-            margin-top: 10px;
         }
-
-        nav {
-            background-color: #dd9d4c;
+        /* Style the header so the title is more visible */
+        header h1 {
+            background-color: rgba(200,200,200,0.5);
             padding: 10px;
-            text-align: center;
+            border-radius: 5px;
+
         }
 
+        /* Style the navigation links */
         nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 5px 10px;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .section-image {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
+            color: #333; /* Darker link color for better contrast */
             padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* smooth transition on hover */
         }
 
-        /* Contact Us Section Styles */
-        #contact-us {
-            background-color: #f8f8f8;
-            padding: 20px;
-            text-align: center;
+        nav a:hover {
+            background-color: rgba(221, 157, 76, 0.5); /* Semi-transparent nav hover color */
+            color: white;
         }
 
-        #contact-us h2 {
-            margin-bottom: 10px;
+
+        /* Ensure images in sections have some margin */
+        .section-image {
+            margin-bottom: 20px;
         }
 
-        #contact-us p {
-            margin-bottom: 5px;
-        }
 
-        #contact-us a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        #contact-us a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>
-            LIVING SPACES CO.
-        </h1>
-        <div class="tagline">WHERE COMFORT MEETS STYLE</div>
-    </header>
-
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Product</a>
-        <a href="#">Customer Reviews</a>
-    </nav>
-
-    <section>
-        <img class="section-image" src="logojpg.jpg" alt="logo">
-    </section>
-    <section id="contact-us">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? We'd love to hear from you!</p>
-        <p>Email: <a href="mailto:info@livingspacesco.com">info@livingspacesco.com</a></p>
-        <p>Phone: <a href="tel:+71275353">+267717275353</a></p>
-        <p>Address: 123 Main Street, Gaborone, Botswana</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Living Spaces Co.</p>
-    </footer>
-
-</body>
+    </body>
 </html>
