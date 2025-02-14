@@ -24,9 +24,13 @@
         }
 
         .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-            color: #8b4513; /* Brown for logo */
+            /* No styles needed here, image styles are in .logo img */
+        }
+
+        .logo img {
+            max-height: 50px; /* Adjust this value as needed */
+            width: auto; /* Maintain aspect ratio */
+            vertical-align: middle; /* Vertically center the logo */
         }
 
         nav {
@@ -128,7 +132,8 @@
 <body>
 
     <header>
-        <div class="logo">MADE® (Replace with your logo)</div>
+        <div class="logo">
+            <img src="LivingSpacesLogo.png" alt="Living Spaces Logo">  </div>
         <nav>
             <a href="#">Shop All</a>
             <a href="#">Sofas & Furniture</a>
