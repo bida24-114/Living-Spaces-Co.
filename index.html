@@ -1,46 +1,166 @@
 <!DOCTYPE html>
-<html lng="en">
+<html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewpoint"
-content="width=device-width,
-initial-scale=1.0">
-<title>
-LIVING SPACES CO.
-</title>
-   <link rel="stylesheet" href="style.css"> 
-</head>
-   <body>
-   <header>
-     <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header> 
-   <h1>
-   LIVING SPACE CO.
-   </h1>
-   <P>
- Where Comfort Meets Style
-   </P>
-   </header>
-   
-   <section>
-      <h2>Contact Us</h2>
-      <p>Speesstar Motors<br>
-         123 Main Street<br>
-         Gaborone,Botswana</p>
-      <p>Sales: +267 987 6543<br>
-         Service: +267 701 1122</p>
-   </section>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Spaces</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #faf9f6; /* Lighter cream white - Choose your preferred shade */
+            color: #333;
+        }
 
-   <footer>
-      <p>&copy 2025 Speed Star Motors</p>
-   </footer>
+        /* Header styles */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #8b4513; /* Brown for logo */
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #a0522d; /* Sienna brown for navigation links */
+        }
+
+        .icons {
+            display: flex;
+        }
+
+        .icons a {
+            margin-left: 10px;
+            color: #8b4513; /* Brown for icons */
+        }
+
+        /* Hero Section Styles */
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-image {
+            width: 32%; /* Adjust for desired width */
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .hero-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(139, 69, 19, 0.7); /* Brown with some transparency */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .hero-image:hover .hero-button {
+            opacity: 1;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #f0ead6; /* Beige */
+            padding: 10px;
+            text-align: center;
+            color: #8b4513; /* Brown for footer text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-image {
+                width: 48%;
+            }
+
+            nav {
+                flex-basis: 100%;
+                margin-top: 10px;
+                justify-content: center;
+            }
+
+            .icons {
+                margin-top: 10px;
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .hero-image {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">MADE® (Replace with your logo)</div>
+        <nav>
+            <a href="#">Shop All</a>
+            <a href="#">Sofas & Furniture</a>
+            <a href="#">Lighting</a>
+            <a href="#">Soft Furnishings</a>
+            <a href="#">Home Accessories</a>
+            <a href="#">Sale</a>
+        </nav>
+        <div class="icons">
+            <a href="#">👤</a>
+            <a href="#">🛒</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-image">
+            <img src="placeholder1.jpg" alt="Sofa">
+            <button class="hero-button">Shop Sofas</button>
+        </div>
+        <div class="hero-image">
+            <img src="placeholder2.jpg" alt="Lighting">
+            <button class="hero-button">Shop Lighting</button>
+        </div>
+        <div class="hero-image">
+            <img src="placeholder3.jpg" alt="Bed">
+            <button class="hero-button">Shop Beds</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Living Spaces</p>
+    </footer>
+
 </body>
 </html>
-
