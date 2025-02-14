@@ -5,127 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Spaces</title>
     <style>
-        /* Basic styles */
         body {
             font-family: sans-serif;
             margin: 0;
-            background-color: #faf9f6; /* Lighter cream white */
-            color: #333;
+            background-color: #f0f0f0; /* Light gray background */
+            color: #333; /* Dark gray text */
         }
 
-        /* Header styles */
         header {
-            background-color: #fff;
+            background-color: #fff; /* White header */
             padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap; /* Important for responsiveness */
-        }
-
-        .logo {
-            /* No styles needed here, image styles are in .logo img */
+            text-align: center; /* Center the logo */
         }
 
         .logo img {
-            max-height: 50px; /* Adjust this value as needed */
-            width: auto; /* Maintain aspect ratio */
-            vertical-align: middle; /* Vertically center the logo */
+            max-height: 80px; /* Adjust as needed */
+            width: auto;
         }
 
         nav {
-            display: flex;
+            background-color: #333; /* Dark gray nav */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
         }
 
         nav a {
-            margin: 0 15px;
+            color: #fff;
             text-decoration: none;
-            color: #a0522d; /* Sienna brown for navigation links */
+            margin: 0 15px;
         }
 
-        .icons {
-            display: flex;
-        }
-
-        .icons a {
-            margin-left: 10px;
-            color: #8b4513; /* Brown for icons */
-        }
-
-        /* Hero Section Styles */
         main {
             padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
         }
 
         .hero-image {
-            width: 32%; /* Adjust for desired width */
-            margin: 10px;
-            position: relative;
-            overflow: hidden;
+            text-align: center; /* Center the image */
+            margin-bottom: 20px;
         }
 
         .hero-image img {
-            width: 100%;
+            max-width: 100%; /* Make image responsive */
             height: auto;
-            display: block;
-            transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-
-        .hero-image:hover img {
-            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         .hero-button {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(139, 69, 19, 0.7); /* Brown with some transparency */
-            color: white;
+            background-color: #007bff; /* Blue button */
+            color: #fff;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            opacity: 0; /* Initially hidden */
-            transition: opacity 0.3s ease; /* Smooth transition */
         }
 
-        .hero-image:hover .hero-button {
-            opacity: 1; /* Show button on hover */
-        }
-
-        /* Footer styles */
         footer {
-            background-color: #f0ead6; /* Beige */
+            background-color: #333; /* Dark gray footer */
+            color: #fff;
             padding: 10px;
             text-align: center;
-            color: #8b4513; /* Brown for footer text */
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero-image {
-                width: 48%; /* Two images per row on medium screens */
-            }
-
-            nav {
-                flex-basis: 100%; /* Navigation takes full width */
-                margin-top: 10px;
-                justify-content: center;
-            }
-
-            .icons {
-                margin-top: 10px;
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 500px) {
-            .hero-image {
-                width: 100%; /* One image per row on small screens */
-            }
         }
     </style>
 </head>
@@ -133,36 +70,26 @@
 
     <header>
         <div class="logo">
-            <img src="LIVING SPACES CO..jpg" alt="Living Spaces Logo">
-        </div>
-        <nav>
-            <a href="#">Shop All</a>
-            <a href="#">Sofas & Furniture</a>
-            <a href="#">Lighting</a>
-            <a href="#">Soft Furnishings</a>
-            <a href="#">Home Accessories</a>
-            <a href="#">Sale</a>
-        </nav>
-        <div class="icons">
-            <a href="#">👤</a>
-            <a href="#">🛒</a>
+            <img src="LivingSpacesLogo.jpg" alt="Living Spaces Logo">
         </div>
     </header>
+
+    <nav>
+        <a href="#">Shop All</a>
+        <a href="#">Sofas & Furniture</a>
+        <a href="#">Lighting</a>
+        <a href="#">Soft Furnishings</a>
+        <a href="#">Home Accessories</a>
+        <a href="#">Sale</a>
+    </nav>
 
     <main>
         <div class="hero-image">
             <img src="placeholder1.jpg" alt="Sofa">
             <button class="hero-button">Shop Sofas</button>
         </div>
-        <div class="hero-image">
-            <img src="placeholder2.jpg" alt="Lighting">
-            <button class="hero-button">Shop Lighting</button>
-        </div>
-        <div class="hero-image">
-            <img src="placeholder3.jpg" alt="Bed">
-            <button class="hero-button">Shop Beds</button>
-        </div>
-    </main>
+
+        </main>
 
     <footer>
         <p>&copy; 2023 Living Spaces</p>
