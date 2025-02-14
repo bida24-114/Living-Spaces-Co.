@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Living Spaces</title>
     <style>
+        /* Basic styles */
         body {
             font-family: sans-serif;
             margin: 0;
@@ -12,14 +13,19 @@
             color: #333; /* Dark gray text */
         }
 
+        /* Header styles */
         header {
             background-color: #fff; /* White header */
             padding: 20px;
             text-align: center; /* Center the logo */
+            display: flex; /* Enable flexbox for alignment */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
         }
 
         .logo img {
             max-height: 80px; /* Adjust as needed */
+            max-width: 300px; /* Adjust as needed */ /* Or use width: and a fixed value */
             width: auto;
         }
 
@@ -88,8 +94,7 @@
             <img src="placeholder1.jpg" alt="Sofa">
             <button class="hero-button">Shop Sofas</button>
         </div>
-
-        </main>
+    </main>
 
     <footer>
         <p>&copy; 2023 Living Spaces</p>
