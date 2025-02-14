@@ -20,7 +20,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            flex-wrap: wrap;
+            flex-wrap: wrap; /* Important for responsiveness */
         }
 
         .logo {
@@ -71,11 +71,11 @@
             width: 100%;
             height: auto;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease; /* Smooth hover effect */
         }
 
         .hero-image:hover img {
-            transform: scale(1.05);
+            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         .hero-button {
@@ -88,12 +88,12 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
         }
 
         .hero-image:hover .hero-button {
-            opacity: 1;
+            opacity: 1; /* Show button on hover */
         }
 
         /* Footer styles */
@@ -107,11 +107,11 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .hero-image {
-                width: 48%;
+                width: 48%; /* Two images per row on medium screens */
             }
 
             nav {
-                flex-basis: 100%;
+                flex-basis: 100%; /* Navigation takes full width */
                 margin-top: 10px;
                 justify-content: center;
             }
@@ -124,7 +124,7 @@
 
         @media (max-width: 500px) {
             .hero-image {
-                width: 100%;
+                width: 100%; /* One image per row on small screens */
             }
         }
     </style>
